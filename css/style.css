@@ -1,0 +1,165 @@
+/***************************************************/
+/******************GENERALITES**********************/
+/***************************************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+} 
+
+/***************************************************/
+/**********************MENU*************************/
+/***************************************************/
+
+#home {
+    font-weight: bold;
+}
+
+#home:hover {
+    border-bottom: 1px solid black;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+#portfolio:hover {
+	border-bottom: 1px solid black;
+	transition: border-bottom 0.3s ease-in-out;
+}
+
+#cv:hover {
+	border-bottom: 1px solid black;
+	transition: border-bottom 0.3s ease-in-out;
+}
+
+#contact:hover {
+	border-bottom: 1px solid black;
+	transition: border-bottom 0.3s ease-in-out;
+}
+
+/***************************************************/
+/**********************HEADER***********************/
+/***************************************************/
+
+#logo-lien {
+    margin: auto 25px;
+}
+
+#logo {
+    background: url('../img/Groupe 3.png');
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 50px;
+    margin: auto;
+} 
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 5px 0 5px 5px;
+    background-color: rgba(255, 133, 243, 34%);
+}
+
+header nav {
+    transform: translateX(-30px);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    width: 70vw;
+}
+
+header nav ul li {
+    padding: 7px 0;
+}
+
+a {
+    text-decoration: none;
+    transition: text-shadow 0.3s ease-in-out;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-shadow: 1px 1px 1px rgb(107, 107, 107);
+}
+
+/***************************************************/
+/**********************CORPS************************/
+/***************************************************/
+
+h2 {
+    overflow: hidden;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+} 
+
+#creation {
+    font-weight: bold;
+}
+
+#pictoMel img {
+    width: 45%;
+    margin: 50px auto;
+    display: block;
+}
+
+#punkt {
+    font-weight: bold;
+    animation-name: punkt;
+    animation-duration: .85s;
+    position: absolute;
+    display: inline-block;
+}
+
+@keyframes punkt {
+    0%, 10% {
+        transform: translate(300px);
+    } 20%, 40%, 60%, 80%, 100% {
+        transform: translate(0px);
+    } 30% {
+        transform: translate(150px);
+    } 50% {
+        transform: translate(75px);
+    } 70% {
+        transform: translate(37px);
+    } 90% {
+        transform: translate(16px);
+    }
+}
+
+/***************************************************/
+/*********************RESPONSIVE********************/
+/***************************************************/
+
+@media screen and (min-width: 700px) and (max-width:900px){
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    h2 {
+        font-size: 60px;
+    }
+}
+
+

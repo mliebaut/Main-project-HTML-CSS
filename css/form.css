@@ -1,0 +1,84 @@
+/***************************************************/
+/***********************HEAD************************/
+/***************************************************/
+
+#home {
+    font-weight: 400;
+}
+
+#contact {
+    font-weight: bold;
+}
+
+/***************************************************/
+/***********************FORM************************/
+/***************************************************/
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+#bouton-envoyer {
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 5px 1px rgb(250, 204, 246);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+#bouton-envoyer:hover {
+    background-color: rgb(250, 204, 246);
+    box-shadow: inset 5px 1px white;
+}
+
+
+@media screen and (max-width: 700px) {
+    #formulaire {
+        width: 310px;
+        height: 310px;
+        margin: 50px auto;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width: 900px) {
+    #formulaire {
+        width: 410px;
+        height: 410px;
+        margin: 50px auto;
+        justify-content: space-around;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:901px) {
+    #formulaire {
+        width: 510px;
+        height: 510px;
+        margin: 50px auto;
+        justify-content: space-around;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

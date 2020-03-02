@@ -1,0 +1,171 @@
+/*-----------ANIMATION------------*/
+
+.animate {
+	font-size: 50px;
+    margin: 10px auto;
+
+}
+
+.animate span {
+	display: inline-block;
+}
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+
+.title span {
+	color: black;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+	60% {
+		transform: translate(20px, 0) scale(1);
+		color: black;
+	}
+
+	80% {
+		transform: translate(20px, 0) scale(1);
+		color: black;
+	}
+
+	99% {
+		transform: translate(0) scale(1.2);
+		color: rgba(255, 133, 243, 34%);
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: black;
+	}
+}
+
+/*-------------HEADER-------------*/
+
+#portfolio {
+	font-weight: bold;
+}
+
+#home {
+	font-weight: 400;
+}
+
+
+/*--------------BODY--------------*/
+body {
+    word-wrap:break-word;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transition: background-color 0.5s ease-in-out;
+    font-size: 100px;
+    text-align: center;
+}
+
+.content:hover {
+    background-color: rgba(255, 133, 243, 34%);
+}
+
+@media screen and (max-width: 699px) {
+    .content {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+    }
+}
