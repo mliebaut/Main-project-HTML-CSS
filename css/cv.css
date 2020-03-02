@@ -264,3 +264,15 @@ p {
     }
 
 }
+
+/*--------------FOOTER--------------*/
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFD5FB;
+	text-align: center;
+	font-size: 10px;
+}

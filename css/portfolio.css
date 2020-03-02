@@ -110,6 +110,7 @@
 
 
 /*--------------BODY--------------*/
+
 body {
     word-wrap:break-word;
 }
@@ -145,6 +146,19 @@ article {
     background-color: rgba(255, 133, 243, 34%);
 }
 
+.logos {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+
+#section-logos {
+	display: flex;
+	flex-direction: row;
+}
+
+/*--------------RESPONSIVE--------------*/
+
 @media screen and (max-width: 699px) {
     .content {
         width: 150px;
@@ -167,5 +181,5 @@ article {
     article {
         display: flex;
         flex-direction: row;
-    }
+	}
 }

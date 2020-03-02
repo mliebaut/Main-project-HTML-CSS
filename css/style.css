@@ -132,7 +132,7 @@ h2 {
 
 @keyframes punkt {
     0%, 10% {
-        transform: translate(110px);
+        transform: translate(50%, 100%); left: 100%; 
     } 20%, 40%, 60%, 80%, 100% {
         transform: translate(0px);
     } 30% {
@@ -144,6 +144,18 @@ h2 {
     } 90% {
         transform: translate(16px);
     }
+}
+
+/*--------------FOOTER--------------*/
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFD5FB;
+	text-align: center;
+	font-size: 10px;
 }
 
 /***************************************************/
